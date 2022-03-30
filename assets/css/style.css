@@ -1,0 +1,286 @@
+/* Public */
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+
+html{
+        --nav-color: rgba(255, 255, 255, 0.7);
+        --main-color: rgba(255, 255, 255, 0.75);
+        --orange-color: #f4623a;
+        --mainfont: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body{
+        font-family: var(--mainfont);
+}
+
+.container{
+        width: 80%;
+        margin: auto;
+}
+
+/* navbar */
+.navbar{
+        position: fixed;
+        width: 100%;
+        overflow: auto;
+        margin-top: 15px;
+        z-index: 9999;
+}
+
+
+
+.logo{
+        float: left;
+        width: 35%;
+        font-size: 30px;
+        color: var(--nav-color);
+
+}
+
+
+.nav{
+        float: left;
+        width: 45%;
+        text-align: right;
+}
+
+@media(max-width:576px){
+        .nav,.logo{
+                width: 100%;
+                text-align: center;
+        }
+        .logo{
+                margin-bottom: 20px;
+        }
+}
+.nav .list{
+        list-style-type: none;
+}
+
+.list .list-item{
+        display: inline-block;
+}
+
+.link-nav{
+        text-decoration: none;
+        margin-right: 15px;
+        color: var(--nav-color);
+}
+
+
+.header-content{
+        background-image: url(../img/bg-masthead.jpg);
+        height: 100vh;
+        background-position: 0 -267px;
+}
+
+
+.header-content-item{
+        padding-top: 300px;
+        text-align: center;
+}
+
+.main-title{
+        color: white;
+        text-transform: uppercase;
+        font-size: 56px;
+        font-weight: 500;
+        width: 56%;
+        margin: auto;
+}
+
+.line{
+        background-color: var(--orange-color);
+        height: 3px;
+        width: 100px;
+        display: block;
+        margin: 20px auto;
+}
+
+.main-disc{
+        color: var(--main-color);
+        width: 44%;
+        margin: auto;
+        font-size: 20px;
+
+}
+
+.link{
+        text-decoration: none;
+        color: white;
+        display: block;
+        background-color: var(--orange-color);
+        width: fit-content;
+        margin: 30px auto;
+        padding: 20px 50px;
+        border-radius: 30px;
+        text-transform: uppercase;
+}
+
+.header .overlay{
+        background: rgba(255,255,255,0.1);
+        height: 100%;
+}
+
+/* ABOUT SECTION */
+
+.about{
+        background-color: var(--orange-color);
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+}
+
+.about .about-heading{
+        color: white;
+
+}
+
+.about .line{
+        background-color: white;
+}
+
+.about .about-disc{
+        color: white;
+        width: 40%;
+        margin: auto;
+}
+
+.about .link,.download .link{
+        text-transform: uppercase;
+        color: black;
+        background-color: white;
+}
+
+/* SERVICES SECTION */
+.services{
+        padding-top: 100px;
+        text-align: center;
+
+}
+
+.services-items{
+        overflow: auto;
+        margin-top: 70px;
+}
+
+.service-item{
+        float: left;
+        width: 25%;
+}
+
+.service-item i{
+        color: var(--orange-color);
+        font-size: 70px;
+        margin-bottom: 10px;
+}
+
+.service-disc{
+        width: 65%;
+        margin: auto;
+        margin-top: 10px;
+}
+
+
+/* PORTFOLIO */
+.portfolio{
+        padding-top: 100px;
+}
+
+.portfolio-items{
+        overflow: hidden;
+}
+
+.portfolio-item{
+        float: left;
+        width: 33.33%;
+        position: relative;
+}
+
+.portfolio img{
+        display: block;
+}
+
+.portfolio .overlay{
+        background-color: var(--orange-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.0;
+        cursor: pointer;
+}
+
+.portfolio-item:hover .overlay{
+        opacity: .8;
+}
+
+.overlay-content{
+        color: var(--main-color);
+        text-align: center;
+        padding-top: 120px;
+}
+
+/* DOWNLOAD SECTION */
+.download{
+        background-color: #343a40;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+}
+
+
+.download-h2{
+        color: white;
+}
+
+/* CONTACT */
+.contact{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+}
+
+.contact-disc{
+        color: #6c757d;
+        width: 30%;
+        margin: auto;
+}
+
+.contact-items{
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 30px;
+}
+
+.contact-item{
+        float: left;
+        width: 50%;
+        text-align: center;
+}
+
+.contact i{
+        color: #6c757d;
+        font-size: 40px;
+}
+
+.contact .mail{
+        color: var(--orange-color);
+}
+
+/* END of contact */
+
+/* FOOTER */
+.footer{
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 50px;
+}
