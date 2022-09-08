@@ -8,8 +8,8 @@ Used language in Temp 2:
  * CSS3
  * HTML5
 </pre>
-![](1aaaa.PNG)
-![](template2/image_2022-09-08_093139162.png)
+![temp1](1aaaa.PNG)
+![temp2](template2/image_2022-09-08_093139162.png)
 
 [link](https://bright-torrone-0dd848.netlify.app)
 
