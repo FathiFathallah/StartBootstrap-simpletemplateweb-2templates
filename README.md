@@ -4,11 +4,9 @@
  USed Languages in Temp 1:
   * HTML
   * CSS2
- ![](1aaaa.PNG)
 Used language in Temp 2:
  * CSS3
  * HTML5
-![](template.PNG)
 </pre>
 ![](1aaaa.PNG)
 
